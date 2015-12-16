@@ -1,8 +1,10 @@
 package us.codecraft.webmagic.downloader.selenium;
 
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,11 +15,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author code4crafter@gmail.com <br>
- * Date: 13-7-26 <br>
- * Time: 下午1:41 <br>
+ *         Date: 13-7-26 <br>
+ *         Time: 下午1:41 <br>
  */
 class WebDriverPool {
-    private Logger logger = Logger.getLogger(getClass());
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     private final static int DEFAULT_CAPACITY = 5;
 
